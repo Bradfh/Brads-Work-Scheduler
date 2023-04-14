@@ -1,12 +1,5 @@
-
-//display date/time on top
-// let dayTime = dayjs().format('dddd, MMMM D YYYY');
-// $('#currentDay').text(dayTime);
-
-
-
-// This is a jQuery function that waits until the DOM is fully loaded before it begins using JS to do any work.  Once it is 'ready' or loaded the anonymous callback function is called.
-// This first part of the mega function handles local storage.  I was trying to use getAttribute or attr to pluck the div ID (e.g. hour-9) because I wanted that to be my key in local storage along with the value inputted into the HTML <textarea>
+// This is a jQuery function that waits until the DOM is fully loaded before it begins using JS to do any work.  Once it is 'ready' or loaded the anonymous callback function is called. I think we do this because we cant traverse an incomplete DOM.
+// This first part of the mega function handles local storage.  I was trying to use getAttribute or attr to pluck the div ID (e.g. hour-9) because I wanted that to be my key in local storage along with the value inputted into the HTML <textarea>.  I kept breaking it though.
 // Local storage is populated with the event id (hour-9, 10, 11, etc) and the value of the textarea (user input)
 // Then it checks to see if savedContent is true, or rather does it see things in local storage to get.  If so it puts it back into the textarea for us.
 $(document).ready(function () {
@@ -76,4 +69,4 @@ $(document).ready(function () {
 // Job 3 using dayjs? jquery? google? add and remove classes to the appropriate blocks of time
 // Job 4 Clicking on a block of time will allow me to input data
 // Job 5 have the save button save the entered event to local storage.  When the page is refreshed the saved events persist
-// Job 6 move all of these functions into the provided function
+// Job 6 move all of these functions into the provided functiond
